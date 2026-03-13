@@ -40,6 +40,12 @@ This project was inspired by the values of **empowerment, leadership, and innova
 It celebrates women who are breaking barriers and shaping the future of science and technology.
 
 ---
+<img width="1356" height="718" alt="image" src="https://github.com/user-attachments/assets/27f0e6b3-2611-47c0-b316-df5180cb1529" />
+<img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/4d43dc18-cb6e-43e1-97a2-a4c7da7d7238" />
+<img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/991f6a96-665d-4f81-9fba-457064067d20" />
+
+
+
 
 ## Author
 
