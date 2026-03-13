@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowered Women in STEM</title>
+    <link rel="stylesheet" href="ambission.css">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #FFB6C1, #F8BBD0);
+            color: #4a4a4a;
+            text-align: center;
+            line-height: 1.6;
+            animation: gradientBackground 10s ease infinite;
+        }
+
+        @keyframes gradientBackground {
+            0% { background: linear-gradient(135deg, #FFB6C1, #F8BBD0); }
+            50% { background: linear-gradient(135deg, #F8BBD0, #FFB6C1); }
+            100% { background: linear-gradient(135deg, #FFB6C1, #F8BBD0); }
+        }
+
+        header {
+            padding: 30px;
+            background: rgba(255, 192, 203, 0.7);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3.8em;
+            color: #b03060;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            text-shadow: 2px 2px #FFC0CB;
+        }
+        header p {
+            font-size: 1.5em;
+            font-style: italic;
+            color: #4a4a4a;
+            font-weight: bold;
+        }
+
+        .champagne-text {
+            font-size: 1.8em;
+            color: #f7e1b5; /* Champagne color */
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-style: italic;
+            animation: glitterEffect 1.5s ease infinite;
+        }
+
+        .champagne-emoji {
+            font-size: 2.5em;
+            color: #f7e1b5;
+            margin-left: 10px;
+        }
+
+        @keyframes glitterEffect {
+            0% { text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4; }
+            50% { text-shadow: 0 0 10px #ff1493, 0 0 20px #ff1493, 0 0 30px #ff1493; }
+            100% { text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4; }
+        }
+
+        .main-content {
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+        .main-content h2 {
+            font-size: 2.5em;
+            color: #b03060;
+            text-shadow: 2px 2px #FFC0CB;
+            font-weight: bold;
+        }
+        .main-content p {
+            margin: 10px auto;
+            font-size: 1.3em;
+            max-width: 800px;
+            font-weight: 600;
+        }
+
+        .quote-section {
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(255, 192, 203, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            position: relative;
+            border: 2px solid #b03060;
+        }
+
+        .quote-section::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/5/55/Champagne_flutes.jpg') center/cover;
+            opacity: 0.15;
+        }
+
+        .quote-section h2 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            color: #b03060;
+            font-weight: bold;
+        }
+        .quote {
+            font-size: 1.8em;
+            font-style: italic;
+            margin-top: 20px;
+            color: #4a4a4a;
+            line-height: 1.4;
+        }
+        .quote-btn {
+            background-color: #b03060;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .quote-btn:hover {
+            background-color: #e28b93;
+        }
+
+        .women-in-stem {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap; /* Allows for a responsive layout */
+            padding: 20px;
+        }
+
+        .women-in-stem img {
+            width: 250px; /* Adjust size */
+            height: 350px; /* Adjust size */
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .women-in-stem img:hover {
+            transform: scale(1.1); /* Slight zoom effect */
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); /* Glowing effect on hover */
+        }
+
+        .inspiring-heading {
+            font-size: 3.5em; /* Increased font size */
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+            letter-spacing: 1px;
+            animation: glitter 1.5s infinite;
+            margin-bottom: 20px; /* Space between heading and images */
+            white-space: nowrap; /* Ensures text stays on one line */
+        }
+
+        @keyframes glitter {
+            0% { text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4; }
+            50% { text-shadow: 0 0 10px #ff1493, 0 0 20px #ff1493, 0 0 30px #ff1493; }
+            100% { text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4; }
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 10px;
+            font-size: 1.2em;
+            color: #4a4a4a;
+            background: #FFB6C1;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Empowered Women in STEM</h1>
+        <p>"Empowering Women ,Inspiring Innovation: a Revolution in STEM, Where Passion Meets Purpose, and Every Idea is a Step Towards a Brighter Future."</p>
+        <div class="champagne-text">
+            Cheers to Champagne moments in STEM! <span class="champagne-emoji">🥂</span>
+        </div>
+    </header>
+
+    <section class="main-content">
+        <h2>Our Inspiration</h2>
+        <p>This project is inspired by the core values of excellence, leadership, and service. We aim to empower women across the world in STEM and create lasting change by celebrating strong, inspiring women who are breaking barriers and leading the way in science and technology.</p>
+    </section>
+
+    <section class="quote-section">
+        <h2>Be Bold, Be Inspired</h2>
+        <div class="quote">
+            "We as women are not here to replace men; we are just leveling the surface for all."
+        </div>
+        <button class="quote-btn" onclick="newQuote()">Get Inspired</button>
+    </section>
+
+    <section class="women-in-stem">
+        
+        <h2 class="inspiring-heading">Inspiring Women in STEM</h2>
+
+        <div class="images-container">
+            
+            <img src="data:image/jpeg;base64,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" alt="Woman in STEM 1">
+            <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6AXT_F-pq66gICZ3wyM1uIMCMeV1NHMvgYQ&s alt="Woman in STEM 2">
+            <img src=data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSERUTEhMWFhUWFxoWFxgXFRgaHxgaGxseGh4XFxsZHSggGh0nHhgYITEhJSkrLi4uHSAzODMsNygtLisBCgoKDg0OGhAQGy0lIB8rLSstLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0rLS0tLS0tLSstLS0tLS0tLf/AABEIAKgBKwMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYDBAcCAQj/xABHEAACAQIEAwUFBAcFBgcBAAABAhEAAwQSITEFQVEGEyJhcQcygZGhFCNCsTRScoLB0fAVYrLh8TNzdJKiwiRDU2OFs9I2/8QAGgEBAQEBAQEBAAAAAAAAAAAAAAIBAwQFBv/EACcRAQEAAgEEAgEEAwEAAAAAAAABAhEhAxITMQRBYVGBodEFwfAi/9oADAMBAAIRAxEAPwDuNKUoFKUoFKUoFKUoFKUoFKUoFKUoFKUoFKUoFKUoFKUoFKVp8T4lbsIXuNAAJjmY6fz2HOKDcpXNOMe1dLbgWrYfrr+R+XL51HYj2ru3+ztgeo2PlrrHnE+W1ZuKmFrrlK4zb9puJIIOUf3gpzDyEkr8xW/g/adeEBkVx1IIPpppU+SK8WTq9KpXDvaDacfeIUPx1nn6ddZ8qyY/tM+UsmUoTlUrEn+9lOaU0Ik5SY0pepieLLetLM3ELYIBaJ2JBAPoSINZRiVkiRIMRPof4iqLhMabzKtx8pj3o1gD3QIP9E9a2sNePehYXN7uogCBA8vPTnXPyungXRXBqgdqfaUlm41jBoL95SVZiT3aEcpGrkHcAgDXWRFYPal2nfB4MW7Vz76+SuYbqseJl6aQojbNNcj4De+zsveLlzKHWeanZh5GK+t8P4s6mHky/afq8meWrpaOK+0Hi6HN3qKOi2Uj4ZgT9a2OA+2XFIwGLtpeTmUGRx575G9IX1qK4re+2Z+7ChbaG5cc6KiLuxiSeQAAJJIFUYV9LD4/Rzx1cY45ZWXiv1jwLjVnGWVvYdw6N8CDzVgdVYdDUjX5v9lfaVsHjkQt9ziGW1cHIMTCP6hiB6E9BX6Pr4/yvj3oZ6+r6dsMu6PtKUrzLKUpQKUpQKUpQKUpQKUpQKUpQKUpQKUpQKUpQKUrXxeKVB4jvyoITtLxy5Z8NoCY1ZlJAPzE8tBPw58e7VYu/ecvfdnMcwVA12A5D4V1TjuPthW6x8vLyrmXHOIIZECfOs2vGKraurqDsRB2/LrWWxaUtAXXYCCZO3X6Vq3yJr5h7hDTzGo9a5/btE/iOHd2gZoU6HIZBIOmgI16mDoK2MPwa6wLd2YBPJ508t6xDiBuC1caWZGyMuXRlAUyzamTAGvTlFS2M4ybua0phZ0JVpuAfh28PXltVXDFuOWTxwzBPI8QAJAktpExPPQbmptcM6XRbkkMJ0kR4oGYcjpMeY9K9di8HbcMLqhspA95hE55jJofd5/zqY4rhEQ2zaUBiTrLknaB4hHTao8U0q9W700lwDZoAYx7xhvDynz+FS2B4YSisQBJCgAtM6bydDXnD4N2GYgmBmk6KNJ+I9K3cEWkZcoL+Lnynz09BTx4nkv05r7bsKbV3CiN7dwjWdZWR+VMR2Rfif2cYXGYG62HwtqyyqzqQqTBYAE6kkHaOgmp32qcEfEYUXV8T2GZo3JQ+/EDWIVo6Ka5PwXi97CXlv4d8lxdjuCDurD8SnmPyIBr9B8OXP4+Pjurjt87rcZ3u+3a7PsxtKrAWUAdQrgX8TDAENB+91GZQfgKgu0fslYhThRh7KqGNxnvXzI5e9nAA1JOlZ+H+21cg7/CNn5m04yn4PBX0k+tVztV7VsVivBYAw9vnBDu/kxYQB5AfGuXS6XzJn/d4ZbhpVOOcLXDCybd43HuL3kd0beUSO7IDEsc2pEhTGUx4hX6sr82ezvglziHEUZyzrbcX77sSSYMgMTuWYAegbpX6TqP8jlzjjbuz3+7elPdfaUpXzXUpSlApSlApSlApSlApSlApSlApSlApSlApSo3j3ExYtFuZ0FB44zxhbIgQW6fzqjcW7Rzzlj/AFprUJxfi7OxJO5+dVbHYtiedYuRYsTxQPP4oBky2gkCRlGgkgSflVb4zbIIIMhpjWYI3E89wZ5givdgDxAPowymMoMSDqGbwnSOY9awcXxauVRSISdQTEmBA1OwVQSNCZjSDVWTTZ7fcTgVZXylBl1U5h4lkgkyx6jkDOkchoNgmQBmiDI0P6pgjbSDpTC8Qay2a2crfrZVJGhGkgxoT/QrzxDit2+ZuvmPWFH+EDrUW4rm9pThfFAiNbYeFmBJAEiOmvnXq/xAMVhSFG4J1brJG1V4Ma2LbMdNa55dS60644Te3TvZ6Rkue9+H3TdH/qb93/H+dS/Hr2XuiCw8TCWN4wYEEd5oIMHTWqN2eS8LRe1cdIKghWZZzMygmOkn5nzqev4HEOwRrjvF02xnZjrlktqTA3q+e1Op3b2k7eNuxJZgdysmIPLXf5zv0k79u6+g2gwJAEa7HnyNQmEwbhVYGQUZ4I0AH+cidDr51IYDET4YynTaesddY6dJ6Vzu18fSRw94wOZ0Og9d9OdUHtV2AW5ca5hCqEkk2zoszuhHu89Ij0q5DEg9SepG08hqfnWbDMMwB1Hlv8K3pfJ6nQy306q9LHOayjjL9jscDH2Zz5qUI+Yapngfszxd4zey4e2NyxDMfJVUkT6kfGuv3SoBKhgAOfWtUYrpXs6n+a6+tak/Llj8Dp3ndSvZDhFjBWBZsLA95mMFnPNnI3P0A0ECrBmqq4fGFYPLapNOJgj8Q+E14sevcuc7yzqfHuN/8+kzSlK7vMUpWtxPGrYs3LzAlbaM7BRJhRJgczAOlBs0qOx3GbdprCtM33yJA5xMt0Gwnqw61mt49TfewJzIiXGPIByyqJ6/dtW6o26Ur5NYPtKTSaBSk1r4jEFWtqEZs7FSVAhIVmzPJ0Hhy6TqwoNilfJr7QKUpQKUpQfCa5r2y42t67kRgUTSR15xVu7bYV7uBvLbfI0AySRoCCQSOokVw3iVu9h1y3JDNJB6jeRG+9GxJ4rF2wPERP8AXPnULiL9s6giq6cNeuS2VyupzZWI03M7VktYAke9RUrduwdjWB3rWYOh11Fey81NXHqd/r+X8frWIgcq9EV5NRVR9U1sYZvEPlz/AIV4XBXCM2UxMSRHKeflWfB4VswOm/UVPbVzKLD/AGkRNsIqmeQ/ZOsRB8JIAH4yIjKBnw/EHB1Yg6nmdfn9aj2XxlhBBIO6/wADUpg+Flk7wsgE6gnX4Ab/AA/nHW45NlxntN8Js3LyyrABdNe8P+HYetfXLpcKDUrOqhhsJJ8Wo0rY4C6oHDFFiIzFdvVmEnzr1YxCrfdveBuR4cuuVMw2JGrZDM/h30rjnivHJmw9i5lYkRlEmSBHqDB5GslksRm1A5GPUn8j8vKtLiPESbohco00MieYJIg8z9atFzwWjJUKBuBs2kHXoa5dsv7L7rET9rI/FPl1rF31aWMcK7AbAn4a7ViW9XC+3WVYLN6UJ5iNOo/hzras49wAARHn/rUbwchg4YwoEmTE9F+OtYFxLESLgE8jP8qr1E3V4dPpSlfSfKKx37QdWVtQwKn0Ig1kpQc5sq9/Dk6tcwWEVR/ev27uZh65sGn/ADVI38UzW8TftsR3+KsYZXUwVtlrdlip5MGe6QeRqbwVrC4Z7yi6ge9ca66vcWczRIA3A0mPM0scCw9rBjCye5giWeDqS0hhEMDqCNoFdu+MR17DDC4jurJYW7uGvsyG47Q1opFxcxJBIuEHr4ajrfC4Thzd7ez4jLbvt3r/AHimw90giYXxWwBlggEgb1PYPhlpC73MS952Q289x7cqh/CoRVUSYJMSYEnQVsLgLJ+zKLk/ZiGtgMski21rxaa+FydI1is7tCu466+GtYu1ZNwqMRh7dsB5ZFv90rLaZz4T4mykkAFtwBXw2r1q1jCti/h7JwjkC5eR4uqreK2UuuyyCJ1iVB3mbDiuHYd+/V3kX8ucZwIKqFBUiCpGUGdwRNYrHCla3dtPi7t8XUNvxNalVIIOUIgEwdyDyre+a/78DRt4EYfEYJ1e4XvF7d4tcdu8+5e5LKTlBDWxEAQCQIGlSnGXIv4MAkA32Bg7juLxg9dQD8BWfEYS2z2CzQ1liyDMNSUa3qOejnaNazYrBLce05Jm05dY5koya+UOfjFR3NUv7J/4O9iy9zvrd++bbd68IExLqECzBUgagjWSNgIv1RFzhFpcO+HZyEdrjElgDNy410gGI3Yxpt86llMiRTLLY+0pSoCoftJxB7S20tkK164LecicggszwdCYWBOkkEzEGYqG47g+8u4U8kvEkRv4GEfnQVXjXHkS1kt4z7St2EZXVSyhoGdDbVYA3ZW5SQZXK3MMXxZX+4uBmNpiwlSMqCZXxjWTlyyIEkmYynt3aHs9hvs94jDW83dOQVVVIOUwQRzHL0rjPbTCW7WIOXQtbhgNNZQiBy0XUT5860VW9ivvA5GoIIImRGghpzadZnzr5e41cMgkXAdjcWSP3w2dv3i1fWsZ0kVq28Pvvp+ZgCjXpsWx/CvwJ/8A1WLvG/V/r51I2cEmkmPKfOInYep0raXCWiPfI0EDKCWYyMoE6ajedfjWdqto1AShYsByj8R22Hx/Op/s2ovXQht2wGDMCRkOxPhzN4lGVhCgkRUXiMCF2ImBIzKdeY06VsYKxcdgbYtqbWQzK8jIYlm6xoN52NVMdVtvC24XhGIEMGiznlWLqufw7rs0NExGoYmNdLNhez2HQn3WciVEDxLuW9DK6cpqjWMRibwVWfMLacyNAIObU/rGdOWnWpLDJxEtK+GYYjNa1jNA11/G/hH6w8o7WcOW+WPGWfvLipkUDMoggZgIIPqRlMb+laF3iz2xkSQIKtrvMZvgY1HkOlbK8IxLHPkAB1Azqo0/VUmQdNj1qMxrDQMIM9IIjTXT6Vw6tsx4enp6t5S3BsSLjEkDPy0n4hee0GOo23GxjL6K1y3MAgNOp8agmDpOoYj1y7AGqpmjSa2sE0mDrpXjuVvD1SLbe4yLli2jrLLpmEAwNuR3B1iNVqW4PiWu2hbynKpLHckxsBpp/XSqILsc412qe7OG4xi2JJkwSBoBuWMAUwtuXJnJMeFmxWAJhiUBaSfC2pknTwiOXOtG3we8+qLIJMaqNiQdzpqDWJMXirq5Qo8JyyMgMlc3PfQHX0qQ4XxsJZXNbchSe8ICxOZiI8Q1AMbDWumWGGTlMspGbhvDLqeJ1AVZJkrvtyPLcV6bEWgSAsgEgGWEgGBoBppXnGcVz2HCI4BBYMwAAA5Kc2pIBEa1p4XiK5F+97vT3Qsx8Z57/GueWMnEbu3murUpSvW8JVZ9o3E7mH4fde0crnKgYaFcxAJB5GJg8jBqzVG9o+ELjMNcw7mA40I/CQZDecEDTntVYWTKW+iq3gvZnge6AuI1xyJa53jgljuQAYGv+c1JDsVhjg0wb53tI5cS8GZYjVY0GaIqu4XtHjeGAWuIWTdsrCriLeumwzdemuU6fi3q+8Px1u/bW7aYMjiVI5/PUHlB1FdepepObdz6rJpzDtR2IwdjE4G3btsFv3SlyXYyBl2JOm52q58F7C4LCXlvWUYOoIBLsdxB0J6Go/tz+m8L/wCIb/tq61ufVzuGPN5n+yRzHhHZTC47G8QOIQsUxELDFd807b7CrVwPsPg8JdF6wjK4BWS7HQ76E1UeG8RxtnG8Q+yYUXwb/jJdVykTA1ImdflVt7OcUx926VxeDFhApIYXFaWkeGAx5En4VXV79e+NTjf4/RkUn2k2m/tI3rfv4fCW8Qv7mIAM+UOT8K6pgsSt22lxDKuodfRhI+hqnY3DLd449t9VfhrIfRroB/Otn2Z4tjgzYuf7TC3XsN+6ZEeUGP3azqc9OfjX8tntX/ay/f3BYHu4ew+JuftEi2g8jJJ9Cav3Z39Ew/8Aubf+AVz3F/f4LiuNP/nOLds/+3aZVBHqfqK6F2d/RMP/ALm3/gFZ1eMJP0v9E9pGlKV52lanEl8GYboQ4+G/r4S2lbdKCE7TcYt2LBmCzqQq6GZG5HMQfjXAO0bk3M7NmJJJ667/ABgmr37W+E3kuretz3AtgaE+AgkkRyXWRyG3SuY3OJhljT4jX60VGazbC+H4jzB2I6g16VAFYjmQJ8ln+J/6ajcPiWIKZjkmYnQE7x0+FbLYoxFCJS1hsyAiyWkMJ8W4BPhgROnOta+xQrNo2yWBBK9NIG2lR1sG44WdzGtbV3hT23CvoRBI0ka6ZgD4T5HXUdRXSW31DiezCXARkCKTHvEnw677x0HyrdwR7i53gTvArKyCJEqZCsEYnpqfkdq073DXtIGba5os8wAHka6jVD/qYx2r7AZlPiJKmRof8yAPr51V3PbOKsQ7Tm4uU4a0oiSbSlTCwupU+FZKjxAjaNxUbaustxcoBBMgnNIg6jQxII3jXQ6TA13ul9coOblLgp1mIEaevrXrFeB0AIJ0Ok84HMDXT+tDU23SsZH3h1+7ecLaEOdFVc8tP4VGY/6VM3uzWPuRmw90sDvkaTt18gIqP7IgDFWJjS4u7lBvzcar612S3fQx47esb4+99QBv5cq5a7pyu5dt4cSu4Yo5FwMIOq+6fTUGD8DWTC2h+uZPRf8APWp63wzv77qwi2ruzsC9wIglyUfcsRsre8SpHvVbsD2Vtqtu4LIBukHLmlLNvLI7wsczEhdSN2b8IrPDFebTnwsgfiHSGyifP3pmpPgfELmHMoMxJiNCDtAkeYBjXarbi8dbtWXw5CG6c6s/doWVCTlgIozsAfISJ22jezfZUsMzu247treUKFIYkuSJYzpl3UxyOmzpdt3DzbnLTTidzOWfDqSWLaptlBlRrsJzfWNo1LfHci90CcpMyBsDuIn6eXzl+0/AmsKwRm8Ae4hDk95akd4jiYDpIIIjMmbSVqi3LgDg7jSufU3HTp3HJduH8ce8q2IJBBRQANZgR8dpnnVjwnAiqKpuMCBqFyx10kbVF9leHIptlDNzMD/BhIPIx8551dW4iE8IZjGkrbkfAzrWY479ozz1dYrLSlK7PMV8ZgInntX2ontLwG3jbPc3GdQGDhkIBDLMESCOdbNb5EjiURkYXApQghg0QV55p0iKp3sm/RLuWe6+03O6/Y8MfWfjNYj7OMwy3cfi7lrmhuGD5HMSPpVy4fgbdi2tq0oVEEKB/nqTzJOprpbjjjcZd7Yqfbn9N4X/AMQf+2rrURxjgSYi9h7rOynDubigRDExo0jbTlUvU5ZS4yfp/YpnYb9M4n/xA/7qudUrH+zu3dvXbwxWItm65dhbYKJPw/Otvs/2MGFvC6MViLkAjLccFdecRvV59mXO/wCCNc//ANB/8ef/ALhUF2m4geHYzGlZAxeGD245Xh92I89WY/Crz/Ya/bvtuds/cdxl0y5c2fNtMyI3isXaDszaxlzD3LhYGw+dYjxaqSjSPdJVdqrHqY7m/WtU0guO8MGF4C1iACllQ0frFgWP/MSas/Z39Ew/+5t/4BXrjvC1xWHuWGYqtwQSsSNQdJ05VsYDDC1aS2CSERUBO5CgCT8q53PeP53aM9KUrm0pSlBG9o2Iwt7KuZshCjTc6CSdAJ3J5TX5j4jwpUuMoOYAxI/FH4h5Heu++1Hs8cZgzlbK1om5z8QAMrA3J5V+eLlx0MRcjoy/w5Vsa2bVgKKxPWC3i50r0Wo19t3ArAmY8qs2A7S4O3bW2+DZyJzP3sFpcPsFG2VeewAJiqm5rEa2ZWMslWHj/FkumLWiTKqTIAyxAOVTyUAEaAVF4O66t4CJIIIJ0IgzPTSdZEa61oVkse8P65VvfbWySRKrfIGir8bhI+U/nNfcJbLPmuMu+Yy6yY5ATueXL4VP8Ox2HDo93KxgglYnmBIyjLuN+U1utgEdmAhVc94kZSdWBGm0D+XnXXxbcvLr6RHZC3cGMsQDJuJGR7RbU7rmbLPrpXaUa+SCPtesEfoPTQio1lcXCmbK5ME5Qe80Ou2kD860cfZz4UoRAMQCFOY5p5jcGNJBJ0GtT4tF6u6rK4pu6xoMybot+PLmljcuGSpj3rK6cuR6WztN2kKWC1lUGkK2b3gQvg8JBEMQCs8hUJw/s53GHuOVCtcAcKoLDNZzMCnUNbe7A390bnXY4P2kb7ULd63bC3wttApBAZzs4Cx4o6bkDmYyq055d4rdkMCQQAJUldhHKNxzOp1rs3C+EstlEa+5uBArODueZg6E8paTAFU/td2dsYYsbVsnv1JKrGS0VIZcoAlcxMRtHTntdhMfdGl4+FLZ953JCqV1ILlBAIE5RpHOaabllucJnjJtq1i0SpfvEkD9R4sOIHu5kfQbb9Nea4rhJm2MyFiCxAkeFdI23IQn41cMLjzdxL3yyNbsAsIUzCqcviC7d4Vlc25bTSq5cxQW4SCAoXKNtSVgttqCdfLeszwlb087Fr7BoWRBnGjFjlYjlBnTmD9RV2t8NkblvPN/WlV32e8J+78Q2MuIjWR4W0301B/iY6DXPWm5Xl9pSlElKUoFKUoFKUoFKUoFKUoFKUoFKUoFKUoK/wBueE3cVg3tWWCuSDqTBA5GAT/pX5443wZsO0PdRzP4C31DqpHyr9Tmvzt7TrFv+0b+TSG1/aPib/qJo1SYr7nrJcStdq0fWalq0WmOWtYya2eG3FD+NgoOhJBIE6SQskjqAJpJyV4t4VmnKJgSYBMAczA0HnX37M6FSwInaQROnKRrUw1qxB7vFWlhgQYv+IAN4gO78EHLprudfD4o3iDKrTbvi7ucwDjfeRcUTMnrI3q7jJyzdX7iPDcH9gV7eQFUGuU53JAOZrh38UjJIj3QBWTjeCt27Vwraw4M2vElwymYQQoyjw8zqMx6xpzbCXSSRIkgxMRPmeukA9ctb1niDIjIbQlgBLIJU9RK/Q10x6kR2V0bH4VbNnD3luEspRhJmDofFrtIA/noRMYTF4XIoW8DOXMpeCoAjK0LmJA03DEDU6muNvxC+wALtA0AAA332Aqx9gce78Qwlu4JUOVBI5kEgt11AArb1JYzx11PBcVz3zh2QBkcXFaAuZUGYxBGWDO/LptVd45hwSrgZVZi1sCRkKaqxBnlJAG2YCNAKvPEuFpb7y5JDFEXNEkBn1/aJ1HpAqA7Zm9dFp7Y7uzZJDkclgrmBGhymPCCPdPw5Y3ldimceV7t7v2MEmWVX8gDlmNABpzrNhcCgsgPdA7xpIDRoNkn9rKddwB0rdu8L7/DtdZzCJpluNuSpzMCfFrI2moThlw+5cLArOkxmOYwo8jp8q6d0ZJVq4RhWaw1sMggOzBAGbVWGYydMomFJHvyTJqGt8Km4SrLcC5RsR3cwZYRA5zBI0kxV17KIgUIWjPh87qdBmMbmdJk6dOm1aeB4DeVjcts4kLbMGQ/icEmTocoSG5A1OVZjwuvCLa21mf9p94Zj3jofyFb+fzFQGIwumU3JCgFs8ExqJYk7GPp0EVmwmIQop02/CGjppXPRtP0pSpWUpSgUpSgUpSgUpSgUpSgUpSgUpSgUpSgVxT2o9kboxL4hASlw5p6E7g/Gfn612uvNy2GBDAEHcESDQflC9g3G4Nady0a/TeO7EYK6Za1BP6rMPpMVrYf2dcOUz9nzH++7n6TH0o1+aO6PSvSYQkgaCeZOg8zEmPhX6st9nMIqlFw1lVIg5baj6gT8a/P/tE4I2DxjWvwt4kMbqTodOY1B9K2G1KipHhvBbl98lrKW1kFlBAAknKTmYQfwg1LX+yN3uLF9XVu/KgJEESGaSSY0Cma3D2fxXerGt8sMwzkugCjRpOUKQIBkzqNq6Y4b9puSNw/ZHFPm7oK6DQsrgKSACQM+UnXTUQCCOU1EXsGUBJKkCAcrKwBM6SpI/CTpP1q6Pj3tk2rsAZrhFlSyJkYwVbL4ik6LbUZjJOxmtHi2BBtM1uVNuQVzs3uGXSH1QrDNGoIkg7TVwx+mTKqjW7wW+beItXV3t3FceZVgY+MRUhwyyGtsSge4CZDsRlSAQYNxNzmBafDC6rmk6wayuIMktaViARuyhtJIg7cxrHTly7V7fpvi+HGKww7sghwrLroykSNRqNDuJqFx/EBZstYxAEBPDAJm2AZDcvDoC2xG8a1EezXjiXsN9iF0q4DNYn3u5zEAwdypBgEzGXlrUnxXgXeEANda2YzK1yVESoUk+JgWbYEaDfUU1q6S5pwviXfKi3SDaVimUK7ZlBLAvkzM7QqiI2A23raw+DdCMY6ksWa4gZYCIhacw3LHy5wvMxY8Fh1wmJSEKG6QpbMpTKxhoaB3ZAKjaZ051ZDwoPjAP8AyUtkoNwCSProsTyBIo3at3+B3LGG7xme27kNd11UM48IIGbQSBBEa9atHDrJsor5jGXMCTqwge/r0+AJrf4qoe26ZZJHuzBkagidxIH9CvLoWy2xoQuUZYIAiCW00029K3aLWxirDPsecgaQ2swfLate3hyoyrbIA2Erp9akmaNB00rHr0FNsSNKUqHQpSlApSlApSlApSlApSlApSlApSlApSlApSlApSlArmPt1wAbC2r0ao5UnnlYbTy1H59a6dVY9pXD++4biF5qveD9zU/9M0HG8NxlvsljNcSEMLA1VijKM2pMKT4jGo1A2nFw/jtiziVv5XuNds/fo4zkXI2ts3IlRuTuOlUG60ac9edY2uE7ma6+T8I7V2xea/iO8zguCuaBrKKJcISCULaCNRAkagHax+LFi1eZ2Je8bhXdCS4KwEI1tqGYljlMgDnBoRuSCSwkRAg676iBAjzjfSda9peaQBlJPRVO49N9Y9aeRva3mUfiOsSIO3keh/nWtcOtebyXFnMrCDBlCIPQ6aGsZuT8NKnK7VFh4HimXF4ZgxBFywJBIIEqsTyGWR6V+m8NjFYlWUgliIIOsaTMRr+UV+V8BZFy9Ztt7txrSGImGKqYnTY+ddgPYW2L3dfaOIRGbN9rXb9nu+sD+oqtbibXS8XgEuQHtqwBkTyI6VnTDgCAOc7k/nVU4HihhAbJuYi8qnKO+ZGIg8mCqY/an4VZ8JjUuiUM+WxHqKizRtle0DuAfUTXhbQXaB6CKysaxu4AkmB1NEtW+pzCDpzrWYv/AHv3cpHwkg/Stu/azbMR6R/EGvNqzlEST5nU1rElSlKh1KUpQKUpQKUpQKUpQKUpQKUpQKUpQKUpQKUpQRnFuO2MOPvHE/qjU/5VUOIe0xA2W0nxJn8qUo2JXhPaR7gliJOygfnUX2u7RHIbROh97z8vSlKyex+c+ILDsB1Na2U9D/rX2lVJtjwZrc4TjBZvJcZcwUzGmvlrXylN65PaY7TdpFxUC3aa0NJBcNJHMwAD8tNeWggA1fKUyyt5pMZOIlsFbL3bKBspdrSBhupYqAwggyCZ3G24rrjcK4gL/df2w+bbP9jtR+zPe5unKJ50pXWekVkfhOPGYHjLEgwf/BKSDJHJ9dfyrPw/A44MD/azN4og4MLr09+vtK1LoGExxVVF5wXJy5gpUE+kmNusV94mxgdOYiZHTWlKjXJ9MP8AaKhM+seXrFeF4yh/C30/nSlbqJ2//9k= alt="Woman in STEM 3">
+        </div>
+    </section>
+    
+    <footer>
+        <p>Coded with passion by Boitumelo Thembekile Zwane</p>
+    </footer>
+
+    <script>
+        const quotes = [
+            '"The future belongs to those who believe in the beauty of their dreams." - Eleanor Roosevelt',
+            '"Success is not the key to happiness. Happiness is the key to success." - Albert Schweitzer',
+            '"The only way to do great work is to love what you do." - Steve Jobs',
+            '"Believe you can and you’re halfway there." - Theodore Roosevelt'
+        ];
+
+        function newQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            document.querySelector('.quote').innerText = quotes[randomIndex];
+        }
+    </script>
+</body>
+</html>
